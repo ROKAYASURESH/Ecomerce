@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
+import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Footer from './Footer';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 function App() {
   return (
   <>  
