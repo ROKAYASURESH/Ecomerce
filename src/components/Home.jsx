@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsMinecartLoaded} from "react-icons/bs";
 import {FaChartLine,FaBoxTissue,FaChartPie } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 var tbl=[
     {
         id:1,
@@ -233,8 +234,6 @@ export default function Home() {
                             <span className="visually-hidden">Next</span>
                         </button>
                         </div>
-
-
                 </div>
 
                 <div className="col-lg-3">
@@ -256,9 +255,8 @@ export default function Home() {
                     <div className="row">
                         {Product1.map((rr)=>(
                             <div className="col-lg-6 bg-light">
-                                <img src={rr.imgage} alt="" />
-                                <h5>{rr.Name}</h5>
-                                <p>{rr.PrdNumber}</p>
+                                <Link to={`/details/${rr.id}`}><img src={rr.imgage} alt="" style={{border:"1px solid black", margin:"4px 0"}}/></Link>
+
                             </div>
                         ))}
                     
@@ -268,11 +266,11 @@ export default function Home() {
                 <div className="col-lg-4 text-center bg-light  ">
                     <h2 className='box'><FaChartLine/>Top Ranking</h2>
                     <div className="row">
-                        {Product2.map((rr)=>(
+                        {Product2.map((r)=>(
                             <div className="col-lg-6">
-                                <img src={rr.image} alt="" />
-                                <h5>{rr.Name}</h5>
-                                <p>{rr.PrNumber}</p>
+                                 <Link to={`/detail/${r.id}`}> <img src={r.image} alt=""  style={{border:"1px solid black", margin:"4px 0"}}/></Link>
+                                {/* <h5>{r.Name}</h5>
+                                <p>{r.PrNumber}</p> */}
                             </div>
                         ))}
                     
@@ -285,9 +283,9 @@ export default function Home() {
                     <div className="row">
                         {Product3.map((rr)=>(
                             <div className="col-lg-6">
-                                <img src={rr.image} alt="" />
-                                <h5>{rr.Name}</h5>
-                                <p>{rr.PrNumber}</p>
+                                <Link to={`/details/${rr.id}`}><img src={rr.image} alt="" style={{border:"1px solid black", margin:"4px 0"}} /></Link>
+                                {/* <h5>{rr.Name}</h5>
+                                <p>{rr.PrNumber}</p> */}
                             </div>
                         ))}
                     </div>
@@ -327,3 +325,4 @@ export default function Home() {
     </>
   )
 }
+export {Product2, Product1}
