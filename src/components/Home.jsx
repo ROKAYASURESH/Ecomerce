@@ -81,7 +81,7 @@ var Product1=[
 var Product2=[
   {
     id:1 ,
-    Name:'Face Cream',
+    Name:'FaceCream',
     image:'https://demo.bosathemes.com/bosa/beauty-shop/wp-content/uploads/sites/68/2022/11/img40-150x150.jpg',
     PrNumber:"12 Product"
   },
@@ -93,13 +93,13 @@ var Product2=[
   },
   {
     id: 3,
-    Name:'Face Wash',
+    Name:'FaceWash',
     image:'https://demo.bosathemes.com/bosa/beauty-shop/wp-content/uploads/sites/68/2022/11/product-14-300x300-1-150x150.jpg',
     PrNumber:"9 Product"
   },
   {
     id: 4,
-    Name:'Cover Range',
+    Name:'CoverRange',
     image:'https://demo.bosathemes.com/bosa/beauty-shop/wp-content/uploads/sites/68/2022/11/product-21-300x300-1-150x150.jpg',
     PrNumber:"2 Prodcut"
   }
@@ -268,7 +268,7 @@ export default function Home() {
                     <div className="row">
                         {Product2.map((r)=>(
                             <div className="col-lg-6">
-                                 <Link to={`/detail/${r.id}`}> <img src={r.image} alt=""  style={{border:"1px solid black", margin:"4px 0"}}/></Link>
+                                 <Link to={`/detail/${r.Name}`}> <img src={r.image} alt=""  style={{border:"1px solid black", margin:"4px 0"}}/></Link>
                                 {/* <h5>{r.Name}</h5>
                                 <p>{r.PrNumber}</p> */}
                             </div>
@@ -325,4 +325,4 @@ export default function Home() {
     </>
   )
 }
-export {Product2, Product1}
+export {Product2, Product1, Product3}

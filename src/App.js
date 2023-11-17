@@ -7,6 +7,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ProductDetail from './components/Details/ProductDetail';
+import ProductDetail2 from './components/Details/ProductDetail2';
 function App() {
   return (
   <>  
@@ -16,7 +17,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/details/:id' element={<ProductDetail/>}/>
-      <Route path='/detail/:id' element={<ProductDetail/>}/>
+      <Route path='/detail/:Name' element={<ProductDetail2/>}/>
 
     </Routes>
     <Footer/>
