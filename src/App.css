@@ -121,15 +121,25 @@ ul li{list-style: none; display: inline-block; padding-left: 8px; font-size: 17p
   position: relative;
   /* border: 3px solid  black; */
 }
+.parents img{
+  position: absolute;
+width: calc(100% - 40px);
+margin-left: 20px;
+height: 500px;
+}
 .childs{
   position: absolute;
   top: 70%;
   left: 30px;
   height: 200px;
-  width: 300px;
+  width: 200px;
   color: rgb(238, 223, 223);
   font-size: 50px;
  
+}
+.childs h6{
+  width: 500px;
+  text-align: center;
 }
 .icons span{
   position: absolute;
@@ -146,9 +156,11 @@ ul li{list-style: none; display: inline-block; padding-left: 8px; font-size: 17p
   padding: 50px;
   position: relative;
   background-color: rebeccapurple;
+  border-radius: 30px;
+  border: 4px solid white;
 }
 .tr{
-  margin-right: 3px;
+  /* margin-right: 3px; */
 }
 .bx{
   position: relative;
