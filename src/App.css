@@ -113,8 +113,10 @@ ul li{list-style: none; display: inline-block; padding-left: 8px; font-size: 17p
   left: 30px;
   height: 200px;
   width: 300px;
-  color: rgb(238, 223, 223);
-  font-size: 50px;
+  color: rgb(21, 197, 115);
+font-family:'Times New Roman', Times, serif;
+font-weight: bold;
+  font-size: 60px;
  
 }
 .parents{
@@ -170,6 +172,7 @@ height: 500px;
   bottom: -30px;
   left: 100px;
   width: 800px;
+  border-radius: 10px;
   background-color: rgb(58, 182, 10);
 }
 .bxxx ul li{

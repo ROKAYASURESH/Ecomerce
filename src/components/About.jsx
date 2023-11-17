@@ -7,7 +7,7 @@ export default function About() {
       <div className="container-fluid bgg">
         <div className="row">
           <div className="col-lg-12"></div>
-            <div className="col-lg-12 parent"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmuaqSJLA9QyLKa4QPujoL-bwBPPQNw_guYQ&usqp=CAU" alt="" width="100%"  height="400px"/>
+            <div className="col-lg-12 parent"><img src="https://media.istockphoto.com/id/470883252/photo/shes-always-one-step-ahead-of-the-latest-fashion-trends.webp?b=1&s=170667a&w=0&k=20&c=_MQKAIfAdW-Zc6W6d-u6_PuKX6mxEdGXxXzd03Wl2Ck=" alt="" width="100%"  height="400px"/>
                 <div className="col-lg-6 child">About Us</div>
             </div>
           </div>
