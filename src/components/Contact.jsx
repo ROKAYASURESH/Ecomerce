@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import React from 'react';
 import { GrMapLocation } from "react-icons/gr";
 
+
 export default function Contact() {
+    useEffect(()=>{
+        document.title="Contact"
+},[])
     return (
         <>
             <div className="container-fluid">

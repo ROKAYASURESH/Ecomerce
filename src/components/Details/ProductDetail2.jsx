@@ -1,8 +1,11 @@
-import React from 'react'
+import React,  { useEffect } from 'react'
 import { Product2 } from '../Home';
 import { useParams } from 'react-router-dom';
 
 export default function ProductDetail2() {
+    useEffect(()=>{
+        document.title="Home/ProductDetail2"
+},[])
     let { Name } = useParams();
     const foun = Product2.find(element => element.Name == Name);
     return (

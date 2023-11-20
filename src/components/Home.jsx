@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsMinecartLoaded} from "react-icons/bs";
 import {FaChartLine,FaBoxTissue,FaChartPie } from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -193,6 +193,9 @@ var Product3=[
 
 
 export default function Home() {
+    useEffect(()=>{
+        document.title="Home"
+},[])
   return (
     <>
         <div className="container-fluid home">

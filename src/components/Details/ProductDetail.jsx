@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Product2 } from '../Home'
 import { Product1 } from '../Home';
 import { useParams } from 'react-router-dom'
 import { Product3 } from '../Home';
 export default function ProductDetail() {
+    useEffect(()=>{
+        document.title="Home/ProductDetail"
+},[])
     let { id } = useParams();
 
     const found = Product1.find(element => element.id == id);
