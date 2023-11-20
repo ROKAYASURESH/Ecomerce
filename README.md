@@ -11,7 +11,7 @@
 - [Contributing](#contributing)
 
 ## Demo
-You can view a live demo of the project [here]().
+You can view a live demo of the project [here](https://github.com/ROKAYASURESH/Blog/assets/127000485/292ad385-5833-41a8-92c0-a8fe1ac4d843).
 ## Getting Started
 
 Provide instructions on how to set up the project locally. Include information about any prerequisites, and step-by-step instructions for installation.
